@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "Inoriginal Subtitle Switcher",
+  "version": "1.0.0",
+  "description": "Переключение субтитров в плеере inoriginal.cc клавишами 1–4.",
+  "content_scripts": [
+    {
+      "matches": ["https://inoriginal.cc/*"],
+      "js": ["content.js"],
+      "run_at": "document_start"
+    }
+  ]
+}
